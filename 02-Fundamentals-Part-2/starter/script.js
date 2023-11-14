@@ -69,7 +69,7 @@ console.log(friends);
 const jonas = ['Jonas', 'Enrique', 'Rebecca', 2023 - 1993];
 console.log(jonas);
 
-const calcAge = [1990, 1967, 2002, 2010, 2018];
+// const calcAge = [1990, 1967, 2002, 2010, 2018];
 
 const newLength = friends.push('Enrique');
 console.log(friends);
@@ -114,3 +114,32 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1970, 'Mike'));
+
+// <Objects></Objects>
+//
+
+const Enrique = {
+    firstName: 'Enrique',
+    lastName: 'Gomez',
+    age: 2031-1993,
+    job: 'student',
+    friends: ['Matthew', 'Jeremy', 'Britney', 'Whitney']
+};
+
+console.log(Enrique.friends);
+console.log(Enrique.age);
+console.log(Enrique['myjob']);
+
+const nameKey = 'Name';
+console.log(Enrique['first' + nameKey])
+console.log(Enrique['last' + nameKey])
+
+const interestedIn = prompt('What do you want to know about Jonas? Chose between firstName, lastName, age, job, and friends');
+console.log(Enrique[interestedIn]);
+
+if (Enrique[interestedIn]) {
+    console.log(Enrique[interestedIn]);
+} else {
+    console.log('Wrong request!!');
+}
+
