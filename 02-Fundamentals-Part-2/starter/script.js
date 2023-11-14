@@ -48,3 +48,47 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2,3));
+
+// <Arrays>
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(years);
+console.log(friends[0]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+// Arrays are mutable but you can't reassign arrays
+
+const jonas = ['Jonas', 'Enrique', 'Rebecca', 2023 - 1993];
+console.log(jonas);
+
+const calcAge = [1990, 1967, 2002, 2010, 2018];
+
+const newLength = friends.push('Enrique');
+console.log(friends);
+console.log(newLength);
+
+// Adds elements to the beginning of the array
+friends.unshift('Steven');
+console.log(friends);
+
+// Remove elements
+//
+friends.pop(); // Last
+console.log(friends);
+friends.pop();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+
+
