@@ -127,8 +127,7 @@ const Enrique = {
 };
 
 console.log(Enrique.friends);
-console.log(Enrique.age);
-console.log(Enrique['myjob']);
+console.log(Enrique.age); console.log(Enrique['myjob']);
 
 const nameKey = 'Name';
 console.log(Enrique['first' + nameKey])
@@ -142,4 +141,12 @@ if (Enrique[interestedIn]) {
 } else {
     console.log('Wrong request!!');
 }
+
+Enrique.location = 'United States';
+Enrique['email'] = 'thisismyemail@email.com';
+console.log(Enrique);
+
+// <Challenge></Challenge>
+// 'Enrique has 3 friends, and his best friend is called Michael '
+console.log(`${Enrique.firstName} has ${Enrique.friends.length} and his best friend is called ${Enrique.friends[0]}`)
 
