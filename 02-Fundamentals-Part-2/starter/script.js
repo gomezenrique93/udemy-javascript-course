@@ -49,7 +49,6 @@ function fruitProcessor(apples, oranges) {
 
 console.log(fruitProcessor(2,3));
 
-<<<<<<< HEAD
 // <Arrays>
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
@@ -93,7 +92,6 @@ console.log(friends.includes('Steven'));
 console.log(friends.includes('Bob'));
 
 
-=======
 // This paramater for birthyear
 // is not related to the other parameter
 const calcAge = function(birthYear) {
@@ -116,4 +114,3 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1970, 'Mike'));
->>>>>>> 21c002ef77cbc62d230f56272ddfccbb0e607651
