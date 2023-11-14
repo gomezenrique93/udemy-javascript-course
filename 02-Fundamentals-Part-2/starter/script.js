@@ -123,8 +123,16 @@ const Enrique = {
     lastName: 'Gomez',
     age: 2031-1993,
     job: 'student',
-    friends: ['Matthew', 'Jeremy', 'Britney', 'Whitney']
+    friends: ['Matthew', 'Jeremy', 'Britney', 'Whitney'],
+    hasDriversLicense: true,
+    calcAge: function() {
+        console.log(this);
+        return 2037 - this.birthYear
+    }
 };
+
+console.log(Enrique.calcAge());
+
 
 console.log(Enrique.friends);
 console.log(Enrique.age); console.log(Enrique['myjob']);
