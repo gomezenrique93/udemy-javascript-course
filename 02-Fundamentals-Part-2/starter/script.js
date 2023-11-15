@@ -3,7 +3,7 @@
 function calcAge1(birthyear) {
     return 2037 - birthyear
 }
-
+//
 const age1 = calcAge1(1993);
 console.log(age1);
 
@@ -126,13 +126,17 @@ const Enrique = {
     friends: ['Matthew', 'Jeremy', 'Britney', 'Whitney'],
     hasDriversLicense: true,
     calcAge: function() {
-        console.log(this);
-        return 2037 - this.birthYear
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function() {
+       return `${this.firstName} is a ${this.calcAge()}    
+        - year old ${Enrique.job}, and he has ${this.hasDriversLicense ? 'a': 'no'} drivers license.`
     }
 };
 
+console.log(Enrique.age);
 console.log(Enrique.calcAge());
-
 
 console.log(Enrique.friends);
 console.log(Enrique.age); console.log(Enrique['myjob']);
@@ -157,4 +161,3 @@ console.log(Enrique);
 // <Challenge></Challenge>
 // 'Enrique has 3 friends, and his best friend is called Michael '
 console.log(`${Enrique.firstName} has ${Enrique.friends.length} and his best friend is called ${Enrique.friends[0]}`)
-
