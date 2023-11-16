@@ -161,3 +161,9 @@ console.log(Enrique);
 // <Challenge></Challenge>
 // 'Enrique has 3 friends, and his best friend is called Michael '
 console.log(`${Enrique.firstName} has ${Enrique.friends.length} and his best friend is called ${Enrique.friends[0]}`)
+
+// Loops
+//
+for(let rep = 0; rep < 30; rep++) {
+    console.log(`Lifting weigths repetition ${rep}`);
+}
