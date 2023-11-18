@@ -167,3 +167,80 @@ console.log(`${Enrique.firstName} has ${Enrique.friends.length} and his best fri
 for(let rep = 0; rep < 30; rep++) {
     console.log(`Lifting weigths repetition ${rep}`);
 }
+
+const Jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037-1991,
+    'teacher',
+    ['Micheal', 'Peter', 'Steven'],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < Jonas.length; i++){
+    //console.log(Jonas[i], typeof Jonas[i]);
+
+    // Filling types array
+    // types[i] = typeof Jonas[i];
+    types.push(typeof Jonas[i]);
+}
+
+console.log(types);
+
+const Years = [1991, 2007, 1080, 2020];
+const Ages = [];
+
+for (let i = 0; i < Years.length; i++) {
+    Ages.push(2037 - Years[i]);
+}
+
+console.log(Ages);
+
+// continue and break
+for (let i = 0; i < Jonas.length; i++){
+    // continue immediately exits the current iteration
+    if (typeof Jonas[i] !== 'string') continue;
+
+    console.log(Jonas[i], typeof Jonas[i]);
+};
+
+for (let i = 0; i < Jonas.length; i++){
+    // break immediately terminates the loop
+    if (typeof Jonas[i] === 'number') break;
+
+    console.log(Jonas[i], typeof Jonas[i]);
+};
+
+for (let i = Jonas.length - 1; i >= 0; i--){
+    console.log(i, Jonas[i]);
+}
+
+// beginning of double loop
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`+++++++ Starting Exercise ********${exercise}`);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Lifting weight repetition ${rep}`);
+    }
+};
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE Lifting weights repetition ${rep}`);
+    rep++;
+};
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    // prints to the console
+    // the number of the dice
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    // if the dice is a 6
+    // will print is about to end
+    if (dice === 6) 
+        console.log('loop is about to end...')
+}
